@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { PatientForm } from "@/components/form/PatientForm";
-import { sessionIdSchema } from "@/lib/schema";
+import { PatientForm } from "../../../../components/form/PatientForm";
+import { sessionIdSchema } from "../../../../lib/schema";
 
 type PatientFormPageProps = {
   params: {

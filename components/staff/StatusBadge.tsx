@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import type { FieldStatus } from "@/lib/schema";
+import type { FieldStatus } from "../../lib/schema";
 
 const labels: Record<FieldStatus, string> = {
   inactive: "Inactive",

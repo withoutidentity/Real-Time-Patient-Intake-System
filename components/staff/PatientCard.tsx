@@ -1,7 +1,7 @@
 import { ExternalLink } from "lucide-react";
-import { LiveFieldViewer } from "@/components/staff/LiveFieldViewer";
-import { StatusBadge } from "@/components/staff/StatusBadge";
-import type { PatientSnapshot } from "@/lib/schema";
+import { LiveFieldViewer } from "./LiveFieldViewer";
+import { StatusBadge } from "./StatusBadge";
+import type { PatientSnapshot } from "../../lib/schema";
 
 export function PatientCard({ snapshot }: { snapshot: PatientSnapshot }) {
   const formUrl = `/form/${snapshot.sessionId}`;

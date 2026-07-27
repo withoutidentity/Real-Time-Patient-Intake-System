@@ -6,4 +6,4 @@ export type {
   PatientStatusPayload,
   PatientSubmitPayload,
   PatientUpdatePayload
-} from "@/lib/schema";
+} from "../lib/schema";

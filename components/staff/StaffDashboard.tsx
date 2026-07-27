@@ -2,10 +2,10 @@
 
 import { Copy, Plus, Radio } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { PatientCard } from "@/components/staff/PatientCard";
-import { Button } from "@/components/ui/Button";
-import { joinStaffDashboard, onPatientList, onPatientSnapshot } from "@/lib/socket-client";
-import type { PatientSnapshot } from "@/lib/schema";
+import { PatientCard } from "./PatientCard";
+import { Button } from "../ui/Button";
+import { joinStaffDashboard, onPatientList, onPatientSnapshot } from "../../lib/socket-client";
+import type { PatientSnapshot } from "../../lib/schema";
 
 export function StaffDashboard() {
   const [snapshots, setSnapshots] = useState<Record<string, PatientSnapshot>>({});

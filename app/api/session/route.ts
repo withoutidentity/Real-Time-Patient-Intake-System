@@ -1,6 +1,6 @@
 import { randomUUID } from "crypto";
 import { NextResponse } from "next/server";
-import { sessionIdSchema } from "@/lib/schema";
+import { sessionIdSchema } from "../../../lib/schema";
 
 export async function POST() {
   const sessionId = randomUUID().replace(/-/g, "").slice(0, 12);

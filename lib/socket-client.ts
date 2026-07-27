@@ -7,7 +7,7 @@ import type {
   PatientStatusPayload,
   PatientSubmitPayload,
   PatientUpdatePayload
-} from "@/lib/schema";
+} from "./schema";
 
 let socket: Socket | null = null;
 

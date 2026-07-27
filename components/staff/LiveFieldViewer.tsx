@@ -1,4 +1,4 @@
-import type { FieldStatus, PatientData } from "@/lib/schema";
+import type { FieldStatus, PatientData } from "../../lib/schema";
 
 const fields: Array<{ label: string; value: (data: Partial<PatientData>) => string | undefined }> = [
   { label: "First name", value: (data) => data.firstName },

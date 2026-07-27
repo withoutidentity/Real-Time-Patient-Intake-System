@@ -4,16 +4,16 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Activity, CheckCircle2, Loader2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button } from "@/components/ui/Button";
-import { FormField } from "@/components/form/FormField";
+import { Button } from "../ui/Button";
+import { FormField } from "./FormField";
 import {
   emitPatientStatus,
   emitPatientSubmitted,
   emitPatientUpdate,
   joinPatientSession
-} from "@/lib/socket-client";
-import { sanitizeDeep } from "@/lib/sanitize";
-import { type FieldStatus, type PatientData, type PatientField, patientSchema } from "@/lib/schema";
+} from "../../lib/socket-client";
+import { sanitizeDeep } from "../../lib/sanitize";
+import { type FieldStatus, type PatientData, type PatientField, patientSchema } from "../../lib/schema";
 
 const genders = [
   { label: "Female", value: "female" },
