@@ -12,7 +12,7 @@ import {
 } from "@/lib/schema";
 import { sanitizeDeep, stripHtml } from "@/lib/sanitize";
 
-const port = Number(process.env.SOCKET_PORT ?? 3001);
+const port = Number(process.env.PORT ?? process.env.SOCKET_PORT ?? 3001);
 const frontendOrigin = process.env.FRONTEND_ORIGIN ?? "http://localhost:3000";
 const staffSocketToken = process.env.STAFF_SOCKET_TOKEN;
 
